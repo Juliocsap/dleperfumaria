@@ -1,0 +1,47 @@
+/* Estilos da grid de perfumes */
+.perfume-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.perfume-item {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfume-item img {
+    width: 100%;
+    max-width: 150px; /* Tamanho máximo das imagens */
+    margin-bottom: 20px;
+}
+
+.perfume-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.perfume-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+.perfume-item .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.perfume-item .btn:hover {
+    background-color: #555;
+}
+
+

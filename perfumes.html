@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfumes.css"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dle Perfumaria</title>
+</head>
+<body>
+
+    <header>
+        <ul class="navegação">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="perfumes.html">Perfumes</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+
+    <section class="perfumes-section">
+        <h1>Nossos Perfumes</h1>
+        <div class="perfume-grid">
+            <!-- Primeira Linha de Perfumes -->
+            <div class="perfume-item">
+                <img src="perfume1.png" alt="Perfume 1">
+                <h3>Perfume Elegante</h3>
+                <p>R$ 399,00</p>
+                <a href="#" class="btn">Comprar</a>
+            </div><!--perfume-item-->
+            
+            <div class="perfume-item">
+                <img src="perfume2.png" alt="Perfume 2">
+                <h3>Perfume Floral</h3>
+                <p>R$ 299,00</p>
+                <a href="#" class="btn">Comprar</a>
+            </div><!--perfume-item-->
+
+            <div class="perfume-item">
+                <img src="perfume3.png" alt="Perfume 3">
+                <h3>Perfume Amadeirado</h3>
+                <p>R$ 350,00</p>
+                <a href="#" class="btn">Comprar</a>
+            </div><!--perfume-item-->
+
+            <div class="perfume-item">
+                <img src="perfume4.png" alt="Perfume 4">
+                <h3>Perfume Cítrico</h3>
+                <p>R$ 320,00</p>
+                <a href="#" class="btn">Comprar</a>
+            </div><!--perfume-item-->
+
+            <!-- Segunda Linha de Perfumes -->
+            <div class="perfume-item">
+                <img src="perfume5.png" alt="Perfume 5">
+                <h3>Perfume Oriental</h3>
+                <p>R$ 450,00</p>
+                <a href="#" class="btn">Comprar</a>
+            </div><!--perfume-item-->
+
+            <div class="perfume-item">
+                <img src="perfume6.png" alt="Perfume 6">
+                <h3>Perfume Frutado</h3>
+                <p>R$ 280,00</p>
+                <a href="#" class="btn">Comprar</a>
+            </div><!--perfume-item-->
+
+            <div class="perfume-item">
+                <img src="perfume7.png" alt="Perfume 7">
+                <h3>Perfume Aquático</h3>
+                <p>R$ 310,00</p>
+                <a href="#" class="btn">Comprar</a>
+            </div><!--perfume-item-->
+
+            <div class="perfume-item">
+                <img src="perfume8.png" alt="Perfume 8">
+                <h3>Perfume Gourmand</h3>
+                <p>R$ 470,00</p>
+                <a href="#" class="btn">Comprar</a>
+            </div><!--perfume-item-->
+        </div><!--perfume-grid-->
+    </section><!--perfumes-section-->
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+    
+</body>
+</html>

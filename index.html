@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dle Perfumaria </title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class=''></i> Dle Perfumaria</a>
+
+        <ul class="navegação">
+            <li><a href="perfumes.html">Perfumes</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="perfume1.png" class="one" alt="Perfume de Luxo">
+        </div><!--home-img-->
+
+        <div class="home-text">
+            <h1>Perfume Elegante</h1>
+            <h5>A essência da sofisticação</h5>
+            <h3>R$ 399,00</h3>
+            <a href="#" class="btn">Comprar Agora</a>
+        </div><!--home-text-->
+    </section><!--home-->
+
+    <div class="main">
+        <div class="row">
+            <li><img src="perfume_thumbnail1.png" onclick="slider('perfume1.png')" alt="Miniatura Perfume 1"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="perfume_thumbnail2.png" onclick="slider('perfume2.png')" alt="Miniatura Perfume 2"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="perfume_thumbnail3.png" onclick="slider('perfume3.png')" alt="Miniatura Perfume 3"></li>
+        </div><!--row3-->
+    </div><!--main-->
+
+    <script>
+        function slider(anything){
+            document.querySelector('.one').src = anything;
+        };
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+    
+</body>
+</html>
